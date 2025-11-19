@@ -1,0 +1,9 @@
+# tea – by yongha elmara
+**Prep time:** 05 min | **Cook time:** 01 min | **Serves:** 01
+
+## Ingredients
+- water, milk, matinal, sugar …
+
+## Steps
+1. boil water …
+2. mix milk and matinal and pour in the water …
