@@ -1,0 +1,29 @@
+name: Check recipe folder
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+jobs:
+  check-recipe:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify recipe folder and README.md
+        run: |
+          if [ ! -d "recipe" ]; then
+            echo "❌ Folder 'recipe' does not exist"
+            exit 1
+          fi
+
+          if [ ! -f "recipe/README.md" ]; then
+            echo "❌ recipe/README.md does not exist"
+            exit 1
+          fi
+
+          echo "✅ recipe folder and README.md exist"
+
