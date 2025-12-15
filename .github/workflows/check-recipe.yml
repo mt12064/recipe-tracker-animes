@@ -25,5 +25,5 @@ jobs:
             exit 1
           fi
 
-          echo "✅ recipe folder and README.md exist"
+          echo "✅ recipe folder and README.md exist" 
 
